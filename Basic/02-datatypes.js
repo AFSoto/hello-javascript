@@ -14,12 +14,14 @@ let email = `braismoure@mouredev.com`
 let age = 37 // Entero
 let height = 1.77 // Decimal
 
+console.log( typeof age)
+console.log( typeof height)
 // Booleanos (boolean)
 let isTeacher = true
 let isStudent = false
 
 // Undefined
-let undefinedValue
+let undefinedValue 
 console.log(undefinedValue)
 
 // Null
@@ -52,4 +54,4 @@ console.log(typeof nullValue)
 console.log(typeof mySymbol)
 
 console.log(typeof myBigInt)
-console.log(typeof myBigInt2)
+console.log(typeof myBigInt2) 

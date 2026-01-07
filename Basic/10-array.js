@@ -15,14 +15,29 @@ console.log(myArray2)
 
 // Inicialización
 
-myArray = [3]
-myArray2 = new Array(3)
+myArray = [3,3,1]
+
+console.log(myArray)
+
+
+
+
+
+
+
+myArray2 = new Array(2,2)
+
 
 console.log(myArray)
 console.log(myArray2)
 
-myArray = [1, 2, 3, 4]
+myArray = [1,3, 4]
 myArray2 = new Array(1, 2, 3, 4)
+myArray2.push(4);
+
+
+console.log(myArray2)
+
 
 console.log(myArray)
 console.log(myArray2)
@@ -50,11 +65,12 @@ console.log(myArray)
 
 // Métodos comunes
 
-myArray = []
+myArray = ["kdkdj"]
 
 // push y pop
 
 myArray.push("Brais")
+console.log(myArray)
 myArray.push("Moure")
 myArray.push("mouredev")
 myArray.push(37)
@@ -67,10 +83,12 @@ myArray.pop()
 console.log(myArray)
 
 // shift y unshift
+//shift elimina el primer elemento ylo develve 
 
 console.log(myArray.shift())
 console.log(myArray)
 
+//unshif agrega elemento a el inicio
 myArray.unshift("Brais", "mouredev")
 console.log(myArray)
 
@@ -85,20 +103,34 @@ myArray.length = 0 // alternativa
 console.log(myArray)
 
 // slice
+//no modifica el array original, sino que crea una copia con una parte del array.
 
 myArray = ["Brais", "Moure", "mouredev", 37, true]
 
-let myNewArray = myArray.slice(1, 3)
+const hdhd = myArray.slice()
+console.log(hdhd);
+
+let myNewArray;
 
 console.log(myArray)
 console.log(myNewArray)
 
 // splice
-
-myArray.splice(1, 3)
+//sirve para eliminar o reemplazar elementos de un array a partir de una posición específica.
+//array.splice(inicio, cantidad, elemento1, elemento2, ...)
+myArray.splice(3,3)
 console.log(myArray)
 
 myArray = ["Brais", "Moure", "mouredev", 37, true]
 
-myArray.splice(1, 2, "Nueva entrada")
+myArray.splice(1, 2, "Nueva entrada", "Otra entrada", "Otra más")
+
+
 console.log(myArray)
+
+function myFunction(primero,segundo) {
+    console.log(`este es mi primer valor ${primero}`);
+    console.log(`este es mi segundo valor ${segundo}`);
+}
+
+myFunction("hola","mundo");

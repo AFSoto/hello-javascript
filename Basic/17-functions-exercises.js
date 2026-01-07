@@ -7,7 +7,36 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=14146
 
 // 1. Crea una función que reciba dos números y devuelva su suma
 
+function suma(n,e){
+    console.log(n+e);
+}
+
+suma(2,3);
+
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
+
+let array = [1,2,1,4,5];
+
+function mayor(array){
+    let numero_mayor = array[0]
+    for (let i = 0; i < array.length; i++) {
+        if (numero_mayor<array[i]) {
+            numero_mayor = array[i];
+        }
+    }
+}
+
+while (true) {
+    
+
+
+    
+}
+
+
+
+
+
 
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
 

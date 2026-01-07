@@ -21,7 +21,8 @@ console.log(myName)
 
 // Sintaxis arrays
 
-let [myValue0, myValue1, myValue2, myValue3, myValue4] = myArray
+let [myValue0, myValue1, myValue2, myValue3, myValue4=3] = myArray
+
 console.log(myValue0)
 console.log(myValue1)
 console.log(myValue2)

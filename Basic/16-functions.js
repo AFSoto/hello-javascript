@@ -11,6 +11,7 @@ function myFunc() {
     console.log("¡Hola, función!")
 }
 
+
 for (let i = 0; i < 5; i++) {
     myFunc()
 }
@@ -34,9 +35,27 @@ myFunc2("Brais Moure")
 
 // Arrow functions
 
+//cuando es un solo parametro
+const cuadrado = x => x * x;
+
+//cuando no hay parametros 
+const saludar = (name) => (`¡Hola, ${name}!`);
+
+console.log(saludar("Brais Moure"))
+
+const manuela = name =>  `Hola ${name}`;
+
+const name_manuela = manuela;
+
+console.log(name_manuela("manuela"));
+
+
+
 const myFunc3 = (name) => {
     console.log(`¡Hola, ${name}!`)
 }
+
+
 
 const myFunc4 = (name) => console.log(`¡Hola, ${name}!`)
 
@@ -44,8 +63,8 @@ myFunc3("Brais Moure")
 myFunc4("Brais Moure")
 
 // Parámetros
-
-function sum(a, b) {
+let b = 3
+function sum(a=0, b=2) {
     console.log(a + b)
 }
 
@@ -77,26 +96,33 @@ console.log(result)
 
 function extern() {
     console.log("Función externa")
+    intern()
     function intern() {
         console.log("Función interna")
     }
-    intern()
+    
 }
 
-extern()
+extern();
 // intern() Error: fuera del scope
 
 // Funciones de orden superior
 
-function applyFunc(func, param) {
-    func(param)
-}
+// function applyFunc(func, param) {
+//     func(param)
+// }
 
-applyFunc(myFunc4, "función de orden superior")
+// function myFunc4(param) {
+//     return param
+// }
+
+// applyFunc(myFunc4, "función de orden superior")
+
+console.log(applyFunc(myFunc4, "función de orden superior"))
 
 // forEach
 
-const myArray = [1, 2, 3, 4]
+
 
 const mySet = new Set(["Brais", "Moure", "mouredev", 37, true, "braismoure@mouredev.com"])
 
@@ -106,8 +132,12 @@ const myMap = new Map([
     ["age", 37]
 ])
 
-myArray.forEach(function (value) {
-    console.log(value)
+
+
+
+const myArray = [1, 2, 3, 4,5]
+myArray.forEach(function (numero) {
+    console.log(numero)
 })
 
 myArray.forEach((value) => console.log(value))
@@ -115,3 +145,6 @@ myArray.forEach((value) => console.log(value))
 mySet.forEach((value) => console.log(value))
 
 myMap.forEach((value) => console.log(value))
+
+
+

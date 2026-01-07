@@ -15,13 +15,19 @@ console.log(mySet)
 
 mySet = new Set(["Brais", "Moure", "mouredev", 37, true, "braismoure@mouredev.com"])
 
+
+
+console.log(mySet)
+
+
 console.log(mySet)
 
 // Métodos comunes
 
 // add y delete
 
-mySet.add("https://moure.dev")
+mySet.add("brais")
+mySet.add(37)
 
 console.log(mySet)
 
@@ -30,11 +36,23 @@ mySet.delete("https://moure.dev")
 console.log(mySet)
 
 console.log(mySet.delete("Brais"))
+
+// if (mySet.delete("andres")) {
+//     console.log("se elimno correctamente")
+// }else{
+//     console.log("no existe")
+// }
+
+
+
+
 console.log(mySet.delete(4))
 
 console.log(mySet)
 
 // has
+
+
 
 console.log(mySet.has("Moure"))
 console.log(mySet.has("Brais"))
@@ -46,6 +64,8 @@ console.log(mySet.size)
 // Convertir un set a array
 let myArray = Array.from(mySet)
 console.log(myArray)
+
+
 
 // Convertir un array a set
 

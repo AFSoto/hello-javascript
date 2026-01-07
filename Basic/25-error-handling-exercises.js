@@ -5,6 +5,17 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=20392
 
 // 1. Captura una excepción utilizando try-catch
 
+// const animales = ['jirafa','leon'];
+// console.log(animales[3][2]);
+
+try {
+    const persona = new Persona;
+} catch (error) {
+    console.log('error'+ error);
+}
+
+
+
 // 2. Captura una excepción utilizando try-catch y finally
 
 // 3. Lanza una excepción genérica

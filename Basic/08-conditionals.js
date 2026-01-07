@@ -32,14 +32,22 @@ if (age == 37) {
 }
 
 // Operador ternario
+age = 35
 
-const message = age == 37 ? "La edad es 37" : "La edad no es 37"
+const message = age == 38 ? "La edad es 37" : "La edad no es 37"
 console.log(message)
+
+const message2 = age == 38? "la edad es 38" : age == 37?  "la edad es 37" : age == 36 ? "la edad es 36" : age == 35? "la edad es 35" : "la edad es menor a 35 o mayor a 38"
+
+console.log(message2)
+
 
 // switch
 
-let day = 3
-let dayName
+let day = 1
+let dayName 
+
+// console.log(typeof dayName)
 
 switch (day) {
     case 0:

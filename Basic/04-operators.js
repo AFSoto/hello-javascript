@@ -21,11 +21,13 @@ console.log(a)
 
 b-- // Decremento
 console.log(b)
+console.log(a)
 
 // Operadores de asignacion
 
 let myVariable = 2
 console.log(myVariable)
+myVariable = myVariable + 2 // Suma con asignación
 myVariable += 2 // Suma con asignación
 console.log(myVariable)
 
@@ -36,6 +38,11 @@ myVariable %= 2 // Módulo con asignación
 myVariable **= 2 // Exponente con asignación
 
 // Operadores de comparación
+
+let x = 4;
+let y = 6;
+
+console.log(x == y);
 
 console.log(a > b) // Mayor que
 console.log(a < b) // Menor que

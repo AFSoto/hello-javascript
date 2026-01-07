@@ -13,11 +13,18 @@ console.log(myMap)
 
 // Inicialiación
 
+//keys
+
 myMap = new Map([
     ["name", "Brais"],
-    ["email", "braismoure@mouredev.com"],
-    ["age", 37]
+    ["surname",""]
 ])
+
+console.log(myMap.get('name'))
+
+
+console.log(myMap.keys())
+
 
 console.log(myMap)
 
@@ -25,8 +32,8 @@ console.log(myMap)
 
 // set
 
-myMap.set("alias", "mouredev")
-myMap.set("name", "Brais Moure")
+myMap.set("name2", "felipe")
+
 
 console.log(myMap)
 
